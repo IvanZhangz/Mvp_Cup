@@ -1,0 +1,9 @@
+<RCC>
+    <!-- /config 前缀对应 Qt 资源路径，例如 :/config/inventory.json。 -->
+    <qresource prefix="/config">
+        <!-- 库存配置：描述每个库位当前是否还有杯子。 -->
+        <file alias="inventory.json">config/inventory.json</file>
+        <!-- 货架配置：描述库位杯型、观察位姿和名义抓取位姿。 -->
+        <file alias="shelf_config.json">config/shelf_config.json</file>
+    </qresource>
+</RCC>

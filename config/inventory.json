@@ -1,0 +1,15 @@
+{
+  "_comment": "库存配置：slotId必须和shelf_config.json里的库位编号一致；quantity大于0表示该库位还有杯子，等于0表示空库位。",
+  "inventory": [
+    {
+      "_comment": "示例库位1：当前有1个杯子，可被MVP订单选择。",
+      "slotId": "slot_1",
+      "quantity": 1
+    },
+    {
+      "_comment": "示例库位2：当前有1个杯子，可被MVP订单选择。",
+      "slotId": "slot_2",
+      "quantity": 1
+    }
+  ]
+}

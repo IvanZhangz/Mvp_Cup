@@ -1,0 +1,19 @@
+{
+  "_comment": "货架配置：每个库位包含杯型、观察位姿和名义抓取位姿；位姿字段当前用于MVP模拟和后续真实硬件标定。",
+  "slots": [
+    {
+      "_comment": "slot_1存放default杯型；observePose用于观察，nominalPickPose用于视觉失败或模拟视觉时抓取。",
+      "slotId": "slot_1",
+      "cupType": "default",
+      "observePose": { "x": 0.0, "y": 0.0, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0 },
+      "nominalPickPose": { "x": 0.3, "y": 0.0, "z": 0.2, "roll": 0.0, "pitch": 0.0, "yaw": 0.0 }
+    },
+    {
+      "_comment": "slot_2同样存放default杯型，但Y方向偏移不同，用于验证多库位配置。",
+      "slotId": "slot_2",
+      "cupType": "default",
+      "observePose": { "x": 0.0, "y": 0.2, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0 },
+      "nominalPickPose": { "x": 0.3, "y": 0.2, "z": 0.2, "roll": 0.0, "pitch": 0.0, "yaw": 0.0 }
+    }
+  ]
+}
