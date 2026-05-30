@@ -74,15 +74,6 @@ bool PickWorkflow::executeSingleCupOrder(const PickOrder& order)
     }
     else
     {
-        Pose fallbackPose;
-        if (m_slotConfig && m_slotConfig->hasSlot(slotId))
-            fallbackPose = m_slotConfig->configOf(slotId).nominalPickPose;
-
-        if (m_motion && !m_motion->executePick(fallbackPose))
-        {
-            m_inventory->setState(slotId, SlotState::Failed);
-            return false;
-        }
         if (m_logger) m_logger->info("视觉未返回有效位姿，使用货架名义抓取位姿兜底");
     }
 

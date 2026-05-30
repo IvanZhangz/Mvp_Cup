@@ -115,7 +115,6 @@ void MainWindow::onStartPickClicked()
     if (slotConfig.loadFromFile(shelfConfigPath))
         m_logEdit->append("货架位姿配置加载成功: " + shelfConfigPath);
     else
-        m_logEdit->append("货架位姿配置加载失败，视觉失败时将使用零位姿兜底");
     {
         m_logEdit->append("货架位姿配置加载失败，停止执行以避免使用未知抓取位姿");
         return;
